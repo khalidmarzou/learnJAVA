@@ -1,0 +1,63 @@
+In Java, the `Math` class provides a large number of static methods for performing basic numeric operations such as exponentiation, logarithms, square roots, and trigonometric functions. Here is a comprehensive list of functions available in the `Math` class:
+
+### Basic Arithmetic Functions
+- `abs(double a)` - Returns the absolute value of a `double` value.
+- `abs(float a)` - Returns the absolute value of a `float` value.
+- `abs(int a)` - Returns the absolute value of an `int` value.
+- `abs(long a)` - Returns the absolute value of a `long` value.
+- `max(double a, double b)` - Returns the greater of two `double` values.
+- `max(float a, float b)` - Returns the greater of two `float` values.
+- `max(int a, int b)` - Returns the greater of two `int` values.
+- `max(long a, long b)` - Returns the greater of two `long` values.
+- `min(double a, double b)` - Returns the smaller of two `double` values.
+- `min(float a, float b)` - Returns the smaller of two `float` values.
+- `min(int a, int b)` - Returns the smaller of two `int` values.
+- `min(long a, long b)` - Returns the smaller of two `long` values.
+
+### Exponential, Logarithmic, and Power Functions
+- `cbrt(double a)` - Returns the cube root of a `double` value.
+- `exp(double a)` - Returns Euler's number `e` raised to the power of a `double` value.
+- `expm1(double x)` - Returns `e^x - 1`.
+- `getExponent(double d)` - Returns the unbiased exponent used in the representation of a `double`.
+- `log(double a)` - Returns the natural logarithm (base `e`) of a `double` value.
+- `log10(double a)` - Returns the base 10 logarithm of a `double` value.
+- `log1p(double x)` - Returns the natural logarithm of the sum of the argument and 1.
+- `pow(double a, double b)` - Returns the value of the first argument raised to the power of the second argument.
+- `sqrt(double a)` - Returns the correctly rounded positive square root of a `double` value.
+
+### Trigonometric Functions
+- `sin(double a)` - Returns the sine of the specified double value.
+- `cos(double a)` - Returns the cosine of the specified double value.
+- `tan(double a)` - Returns the tangent of the specified double value.
+- `asin(double a)` - Returns the arc sine of a value; the returned angle is in the range -π/2 through π/2.
+- `acos(double a)` - Returns the arc cosine of a value; the returned angle is in the range 0.0 through π.
+- `atan(double a)` - Returns the arc tangent of a value; the returned angle is in the range -π/2 through π/2.
+- `atan2(double y, double x)` - Returns the angle theta from the conversion of rectangular coordinates (x, y) to polar coordinates (r, theta).
+
+### Hyperbolic Functions
+- `sinh(double x)` - Returns the hyperbolic sine of a `double` value.
+- `cosh(double x)` - Returns the hyperbolic cosine of a `double` value.
+- `tanh(double x)` - Returns the hyperbolic tangent of a `double` value.
+
+### Rounding Functions
+- `ceil(double a)` - Returns the smallest (closest to negative infinity) `double` value that is greater than or equal to the argument and is equal to a mathematical integer.
+- `floor(double a)` - Returns the largest (closest to positive infinity) `double` value that is less than or equal to the argument and is equal to a mathematical integer.
+- `rint(double a)` - Returns the `double` value that is closest in value to the argument and is equal to a mathematical integer.
+- `round(double a)` - Returns the closest `long` to the argument.
+- `round(float a)` - Returns the closest `int` to the argument.
+
+### Random and Miscellaneous Functions
+- `random()` - Returns a double value with a positive sign, greater than or equal to 0.0 and less than 1.0.
+- `signum(double d)` - Returns the signum function of the argument; zero if the argument is zero, 1.0 if the argument is greater than zero, -1.0 if the argument is less than zero.
+- `signum(float f)` - Returns the signum function of the argument; zero if the argument is zero, 1.0 if the argument is greater than zero, -1.0 if the argument is less than zero.
+- `ulp(double d)` - Returns the size of an ulp of the argument.
+- `ulp(float f)` - Returns the size of an ulp of the argument.
+- `hypot(double x, double y)` - Returns sqrt(x^2 + y^2) without intermediate overflow or underflow.
+- `nextAfter(double start, double direction)` - Returns the floating-point number adjacent to the first argument in the direction of the second argument.
+- `nextAfter(float start, double direction)` - Returns the floating-point number adjacent to the first argument in the direction of the second argument.
+- `nextUp(double d)` - Returns the floating-point value adjacent to `d` in the direction of positive infinity.
+- `nextUp(float f)` - Returns the floating-point value adjacent to `f` in the direction of positive infinity.
+- `scalb(double d, int scaleFactor)` - Returns `d * 2^scaleFactor`.
+- `scalb(float f, int scaleFactor)` - Returns `f * 2^scaleFactor`.
+
+These methods provide a wide range of mathematical functionalities that can be used directly without the need to create an instance of the `Math` class, as all methods are static.
