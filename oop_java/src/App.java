@@ -12,5 +12,14 @@ public class App {
         Electric_car tesla = new Electric_car("black", "X11", 2020, 120000.12);
 
         tesla.displayDetails();
+
+        Exceptions_Handling.readFile();
+
+        try {
+            // This will throw an exception
+            Exceptions_Handling.checkAge(15);
+        } catch (ArithmeticException e) {
+            System.out.println("Caught an exception: " + e.getMessage());
+        }
     }
 }
