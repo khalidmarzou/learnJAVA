@@ -1,4 +1,4 @@
-public class swap2variables {
+public class Swap2variables {
     public static void main(String[] args) {
 
         String x = "water";
